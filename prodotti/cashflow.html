@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cashflow | Frame Lab</title>
+  <meta name="description" content="Cashflow è l'app Frame Lab per il controllo dei tuoi soldi, ogni giorno: entrate, uscite e saldi sempre sottomano, installabile su ogni dispositivo." />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#0B1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comfortaa:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo" aria-label="Frame Lab home">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <g transform="skewX(-10)">
+            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
+          </g>
+        </svg>
+        <span class="logo-text">FRAME LAB</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale">
+        <a href="../index.html#servizi">Servizi</a>
+        <a href="../index.html#processo">Processo</a>
+        <a href="../index.html#prodotti">Prodotti</a>
+        <a href="../index.html#chi-siamo">Chi siamo</a>
+        <a href="../index.html#contatti" class="btn btn-primary btn-sm">Parliamone</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow glow-violet"></div>
+        <div class="glow glow-cyan"></div>
+      </div>
+      <div class="container product-hero-content">
+        <p class="eyebrow"><a href="../index.html#prodotti" class="crumb">← Prodotti Frame Lab</a></p>
+        <h1 class="product-title">Cashflow<span class="grad-text">.</span></h1>
+        <p class="product-hero-tag">Il controllo dei tuoi soldi, ogni giorno.</p>
+        <p class="product-hero-desc">
+          Entrate, uscite e saldi sempre sottomano: Cashflow è la web app Frame Lab
+          che ti dice esattamente come stai andando, senza fogli di calcolo e senza stress.
+        </p>
+        <div class="hero-cta">
+          <a href="https://cashflow.dallaviaweb.it" target="_blank" rel="noopener" class="btn btn-primary">Apri l'app ↗</a>
+          <a href="../index.html#contatti" class="btn btn-ghost">Contattaci</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Cosa fa</p>
+        <h2 class="section-title reveal">Semplice da usare,<br />chiaro da leggere.</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Movimenti in un tocco</h3>
+            <p>Registra entrate e uscite in pochi secondi: categorie chiare, importi sempre sotto controllo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><line x1="18" y1="9" x2="13" y2="14"/><line x1="13" y1="14" x2="9" y2="10"/><line x1="9" y1="10" x2="5" y2="14"/></svg></div>
+            <h3>Andamento sempre visibile</h3>
+            <p>Saldi e grafici aggiornati: capisci al volo dove vanno i tuoi soldi e come stai andando.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+            <h3>Come un'app vera</h3>
+            <p>Web app installabile su telefono e desktop: si apre dalla home e funziona come un'app nativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <h2>Prendi il controllo<br /><span class="grad-text">dei tuoi soldi.</span></h2>
+          <p>Apri Cashflow dal browser e installalo sul telefono: è già pronto.</p>
+          <div class="cta-actions">
+            <a href="https://cashflow.dallaviaweb.it" target="_blank" rel="noopener" class="btn btn-primary">cashflow.dallaviaweb.it ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo" aria-label="Frame Lab home">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <g transform="skewX(-10)">
+            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
+          </g>
+        </svg>
+        <span class="logo-text">FRAME LAB</span>
+      </a>
+      <p class="footer-tag">Software &amp; Digital Solutions | Ideas into reality.</p>
+      <p class="footer-copy">© <span id="year"></span> Frame Lab. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

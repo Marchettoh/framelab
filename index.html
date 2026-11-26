@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frame Lab | Software &amp; Digital Solutions</title>
+  <meta name="description" content="Frame Lab è il laboratorio digitale dove le idee prendono forma e diventano soluzioni concrete. Software su misura, prodotti digitali, piattaforme e integrazioni aziendali." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0B1020" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Frame Lab" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comfortaa:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Frame Lab home">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <g transform="skewX(-10)">
+            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
+          </g>
+        </svg>
+        <span class="logo-text">FRAME LAB</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale">
+        <a href="#servizi">Servizi</a>
+        <a href="#processo">Processo</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#contatti" class="btn btn-primary btn-sm">Parliamone</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow glow-violet"></div>
+        <div class="glow glow-cyan"></div>
+        <svg class="hero-frame" viewBox="0 0 64 64" fill="none">
+          <g transform="skewX(-10)" stroke-width="6" stroke-linejoin="round">
+            <path class="frame-path" d="M58 14H32Q18 14 18 26V33" stroke="rgba(255,255,255,.85)"/>
+            <path class="frame-path frame-path-violet" d="M46 41H18V56" stroke="#7C3AED"/>
+          </g>
+        </svg>
+        <div class="grid-lines"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Frame Lab | Software &amp; Digital Solutions</p>
+        <h1 class="hero-title">
+          <span class="reveal">Ideas into</span>
+          <span class="reveal grad-text">reality.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Il laboratorio digitale dove le idee prendono forma e diventano soluzioni
+          concrete: software su misura, prodotti digitali e strumenti che semplificano
+          il lavoro delle aziende.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#contatti" class="btn btn-primary">Avvia il tuo progetto</a>
+          <a href="#servizi" class="btn btn-ghost">Scopri cosa facciamo</a>
+        </div>
+        <ul class="hero-tags reveal" aria-label="Aree di attività">
+          <li>Software su misura</li>
+          <li>Prodotti digitali</li>
+          <li>Consulenza tecnologica</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SERVIZI ===== -->
+    <section class="section" id="servizi">
+      <div class="container">
+        <p class="eyebrow reveal">Aree di attività</p>
+        <h2 class="section-title reveal">Sviluppiamo soluzioni,<br />non solo siti web.</h2>
+        <p class="section-lead reveal">
+          Frame Lab è una software house: progettiamo e realizziamo sistemi digitali
+          completi, dal gestionale interno alla piattaforma SaaS.
+        </p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Sviluppo Software</h3>
+            <p>Gestionali personalizzati, piattaforme web e sistemi enterprise progettati sui tuoi processi, non il contrario.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </div>
+            <h3>Prodotti Digitali</h3>
+            <p>Applicazioni web e mobile, prodotti SaaS e soluzioni proprietarie: dall'idea al lancio sul mercato.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Consulenza &amp; Digitalizzazione</h3>
+            <p>Strategia, integrazione dei sistemi e ottimizzazione dei processi per guidare la trasformazione digitale.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M9 22v-4M15 22v-4"/><rect x="5" y="8" width="14" height="10" rx="2"/></svg>
+            </div>
+            <h3>Integrazioni &amp; Automazioni</h3>
+            <p>API, connettori e automazioni che fanno dialogare i tuoi strumenti ed eliminano il lavoro manuale ripetitivo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+            </div>
+            <h3>Siti Web</h3>
+            <p>Siti statici velocissimi e siti dinamici con aree riservate e gestione contenuti.
+              Come <a href="https://turbomastin.dallaviaweb.it" target="_blank" rel="noopener" class="inline-link">TurboMastin</a>, il sito statico dell'officina di San Pietro in Cariano.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="section section-alt" id="processo">
+      <div class="container">
+        <p class="eyebrow reveal">Metodo</p>
+        <h2 class="section-title reveal">Dal brief al rilascio,<br />un processo chiaro.</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Discovery</h3>
+            <p>Analizziamo obiettivi, processi e vincoli tecnici per definire il perimetro del progetto.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Design</h3>
+            <p>Architettura tecnica e prototipi UI/UX: validiamo la soluzione prima di scrivere codice.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Sviluppo</h3>
+            <p>Sprint iterativi con demo continue: il prodotto prende forma sotto i tuoi occhi.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Rilascio &amp; Crescita</h3>
+            <p>Deploy, monitoraggio ed evoluzione continua: restiamo al tuo fianco dopo il lancio.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PRODOTTI ===== -->
+    <section class="section" id="prodotti">
+      <div class="container">
+        <p class="eyebrow reveal">I nostri prodotti</p>
+        <h2 class="section-title reveal">Software pronti,<br />in noleggio.</h2>
+        <p class="section-lead reveal">
+          Oltre allo sviluppo su misura, mettiamo a disposizione i nostri prodotti
+          proprietari in abbonamento: piattaforme già pronte, sempre aggiornate
+          e supportate da chi le ha scritte.
+        </p>
+        <div class="products">
+          <article class="product reveal">
+            <div class="product-head">
+              <h3>Nexogo</h3>
+              <span class="product-badge">SaaS</span>
+            </div>
+            <p class="product-tag">Food delivery senza commissioni per il tuo locale</p>
+            <p class="product-desc">
+              Tre app in un ecosistema: i clienti ordinano, il locale gestisce,
+              i fattorini consegnano. Zero percentuali sugli ordini, il tuo marchio in primo piano.
+            </p>
+            <ul class="product-feats">
+              <li>App clienti, gestionale e app fattorini incluse</li>
+              <li>0% commissioni | abbonamento fisso mensile</li>
+              <li>Tracking live della consegna sulla mappa</li>
+            </ul>
+            <div class="product-actions">
+              <a href="prodotti/nexogo.html" class="btn btn-dark btn-sm">Scopri Nexogo</a>
+              <a href="https://nexogo.dallaviaweb.it" target="_blank" rel="noopener" class="product-link">nexogo.dallaviaweb.it →</a>
+            </div>
+          </article>
+          <article class="product reveal">
+            <div class="product-head">
+              <h3>Gestora</h3>
+              <span class="product-badge">SaaS</span>
+            </div>
+            <p class="product-tag">Meno caos. Più controllo.</p>
+            <p class="product-desc">
+              Ordini, magazzino e produzione in sintonia: Gestora è il gestionale
+              che dà il ritmo alla tua attività, dal preventivo alla consegna.
+            </p>
+            <ul class="product-feats">
+              <li>Ordini, magazzino e produzione sincronizzati</li>
+              <li>Vista unica sullo stato di ogni lavorazione</li>
+              <li>Canone mensile, aggiornamenti inclusi</li>
+            </ul>
+            <div class="product-actions">
+              <a href="prodotti/gestora.html" class="btn btn-dark btn-sm">Scopri Gestora</a>
+              <a href="https://gestora.dallaviaweb.it" target="_blank" rel="noopener" class="product-link">gestora.dallaviaweb.it →</a>
+            </div>
+          </article>
+          <article class="product reveal">
+            <div class="product-head">
+              <h3>Cashflow</h3>
+              <span class="product-badge">SaaS</span>
+            </div>
+            <p class="product-tag">Il controllo dei tuoi soldi, ogni giorno</p>
+            <p class="product-desc">
+              Entrate, uscite e budget sempre sottomano: Cashflow è l'app
+              che ti dice esattamente come stai andando, giorno dopo giorno.
+            </p>
+            <ul class="product-feats">
+              <li>Movimenti e saldi sempre aggiornati</li>
+              <li>Panoramica chiara di entrate e uscite</li>
+              <li>Installabile come app su ogni dispositivo</li>
+            </ul>
+            <div class="product-actions">
+              <a href="prodotti/cashflow.html" class="btn btn-dark btn-sm">Scopri Cashflow</a>
+              <a href="https://cashflow.dallaviaweb.it" target="_blank" rel="noopener" class="product-link">cashflow.dallaviaweb.it →</a>
+            </div>
+          </article>
+        </div>
+        <div class="split split-bottom">
+          <div class="split-text reveal">
+            <p>
+              Ogni progetto nasce da un problema reale. E quando il problema è
+              tuo e soltanto tuo, costruiamo lo strumento da zero.
+            </p>
+            <ul class="check-list">
+              <li>Software gestionali personalizzati</li>
+              <li>Applicazioni web &amp; mobile</li>
+              <li>Piattaforme digitali e portali</li>
+              <li>Prodotti SaaS proprietari</li>
+              <li>Integrazioni e automazioni aziendali</li>
+            </ul>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% su misura</span></div>
+            <div class="stat"><span class="stat-num" data-count="360">0</span><span class="stat-label">° di supporto</span></div>
+            <div class="stat"><span class="stat-num" data-count="24">0</span><span class="stat-label">/7 monitoring</span></div>
+            <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">obiettivo: il tuo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHI SIAMO ===== -->
+    <section class="section section-alt" id="chi-siamo">
+      <div class="container split">
+        <div>
+          <p class="eyebrow reveal">Chi siamo</p>
+          <h2 class="section-title reveal">Un laboratorio,<br />non una fabbrica.</h2>
+        </div>
+        <div class="split-text reveal">
+          <p>
+            Frame Lab è il laboratorio digitale dove le idee prendono forma e
+            diventano soluzioni concrete. Siamo un team di designer, sviluppatori
+            e consulenti che lavora fianco a fianco con le aziende per costruire
+            software che dura nel tempo.
+          </p>
+          <p>
+            Crediamo nella tecnologia con uno scopo: ogni riga di codice deve
+            risolvere un problema reale, semplificare un processo o creare nuovo
+            valore. Diamo forma alle tue idee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATTI / CTA ===== -->
+    <section class="section cta" id="contatti">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <svg class="cta-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)" stroke-width="12" stroke-linejoin="round">
+              <path d="M58 14H32Q18 14 18 26V33" stroke="#FFFFFF"/>
+              <path d="M46 41H18V56" stroke="#7C3AED"/>
+            </g>
+          </svg>
+          <h2>Hai un'idea?<br /><span class="grad-text">Diamole forma.</span></h2>
+          <p>Raccontaci il tuo progetto: ti risponderemo con una proposta concreta, non con un preventivo automatico.</p>
+          <div class="cta-actions">
+            <a href="mailto:info@framelabweb.com" class="btn btn-primary">info@framelabweb.com</a>
+            <a href="https://www.framelabweb.com" class="btn btn-ghost" target="_blank" rel="noopener">www.framelabweb.com</a>
+          </div>
+          <p class="cta-loc">Verona, IT</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo" aria-label="Frame Lab home">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <g transform="skewX(-10)">
+            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
+          </g>
+        </svg>
+        <span class="logo-text">FRAME LAB</span>
+      </a>
+      <p class="footer-tag">Software &amp; Digital Solutions | Ideas into reality.</p>
+      <nav class="footer-links" aria-label="Link footer">
+        <a href="#servizi">Servizi</a>
+        <a href="#processo">Processo</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#contatti">Contatti</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Frame Lab. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
