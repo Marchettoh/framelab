@@ -61,6 +61,17 @@ counters.forEach(el => counterIO.observe(el));
 // Anno corrente nel footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Conferma invio form contatti
+if (new URLSearchParams(location.search).has('inviato')) {
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    const ok = document.createElement('p');
+    ok.className = 'form-success';
+    ok.textContent = 'Messaggio inviato! Ti risponderemo al più presto.';
+    form.replaceWith(ok);
+  }
+}
+
 // ===== Cookie banner (GDPR) =====
 (function () {
   if (localStorage.getItem('fl_cookie_consent')) return;
