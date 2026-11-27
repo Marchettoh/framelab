@@ -3,72 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action https://formsubmit.co; base-uri 'self'; object-src 'none'" />
   <title>Cookie Policy | Frame Lab</title>
-  <meta name="description" content="Cookie Policy di Frame Lab: informazioni sui cookie utilizzati da questo sito." />
+  <meta name="description" content="Informazioni su cookie e strumenti di memorizzazione usati dal sito framelabweb.it." />
+  <link rel="canonical" href="https://www.framelabweb.it/cookie-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Frame Lab" />
+  <meta property="og:title" content="Cookie Policy | Frame Lab" />
+  <meta property="og:description" content="Informazioni su cookie e strumenti di memorizzazione usati dal sito framelabweb.it." />
+  <meta property="og:url" content="https://www.framelabweb.it/cookie-policy.html" />
+  <meta property="og:image" content="https://www.framelabweb.it/icons/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#0B1020" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comfortaa:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/space-grotesk-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
 </head>
-<body>
+<body class="page-plain">
+  <a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <header class="nav scrolled">
-    <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="Frame Lab home">
-        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <g transform="skewX(-10)">
-            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
-            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
-          </g>
-        </svg>
-        <span class="logo-text">FRAME LAB</span>
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="fl-mark" viewBox="0 0 64 64">
+      <g transform="skewX(-10)" fill="none" stroke-width="12" stroke-linejoin="round">
+        <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor"/>
+        <path class="mark-b" d="M46 41H18V56" stroke="#7C3AED"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="site-header on-dark" id="header">
+    <div class="container header-inner">
+      <a href="./" class="brand" aria-label="Frame Lab, vai alla home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+        <span class="brand-word" aria-hidden="true">FRAME LAB</span>
       </a>
-      <nav class="nav-links">
-        <a href="index.html">← Torna al sito</a>
+      <nav class="nav" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="./#servizi">Servizi</a></li>
+          <li><a href="./#prodotti">Prodotti</a></li>
+          <li><a href="./#processo">Metodo</a></li>
+          <li><a href="./#chi-siamo">Studio</a></li>
+        </ul>
       </nav>
+      <a href="./#contatti" class="btn btn-sm header-cta">Parliamone</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
     </div>
   </header>
 
-  <main class="policy">
+  <div class="mobile-menu on-dark" id="mobileMenu">
+    <nav aria-label="Principale (mobile)">
+      <ul class="mobile-menu-list">
+        <li><a href="./#servizi"><span>01</span>Servizi</a></li>
+        <li><a href="./#prodotti"><span>02</span>Prodotti</a></li>
+        <li><a href="./#processo"><span>03</span>Metodo</a></li>
+        <li><a href="./#chi-siamo"><span>04</span>Studio</a></li>
+        <li><a href="./#contatti"><span>05</span>Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:info@framelabweb.it">info@framelabweb.it</a>
+      <a href="tel:+393755206422">+39 375 520 6422</a>
+      <a href="./#contatti" class="btn">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1" class="policy">
     <div class="container">
-      <div class="policy-content">
+      <article class="policy-content">
         <h1>Cookie Policy</h1>
         <p class="policy-updated">Ultimo aggiornamento: novembre 2026</p>
+        <p><span class="todo">Bozza da far verificare a un professionista prima della pubblicazione.</span></p>
 
         <h2>1. Cosa sono i cookie</h2>
-        <p>I cookie sono piccoli file di testo che i siti visitati inviano al dispositivo dell'utente, dove vengono memorizzati per essere ritrasmessi agli stessi siti alla visita successiva.</p>
+        <p>I cookie sono piccoli file di testo che i siti visitati salvano sul dispositivo dell'utente per ritrovarli alla visita successiva. Strumenti simili, come il localStorage del browser, funzionano in modo analogo.</p>
 
-        <h2>2. Cookie utilizzati da questo sito</h2>
-        <p>Questo sito utilizza <strong>esclusivamente cookie tecnici</strong>, necessari al corretto funzionamento delle pagine e alla memorizzazione delle tue preferenze:</p>
+        <h2>2. Cosa usa questo sito</h2>
+        <p>Questo sito usa <strong>solo uno strumento tecnico</strong>, necessario a non mostrarti più l'avviso informativo dopo che l'hai chiuso:</p>
         <ul>
-          <li><strong>fl_cookie_consent</strong> | memorizza la tua scelta relativa al banner cookie (localStorage, durata illimitata fino a cancellazione manuale)</li>
+          <li><strong>fl_notice_seen</strong> (localStorage): ricorda che hai chiuso l'avviso. Resta finché non cancelli i dati di navigazione.</li>
         </ul>
-        <p>Non utilizziamo cookie di profilazione, cookie di terze parti per marketing, né strumenti di analisi statistica.</p>
+        <p>Non usiamo cookie di profilazione, cookie di terze parti per marketing né strumenti di analisi statistica.</p>
 
-        <h2>3. Cookie di terze parti</h2>
-        <p>Il sito carica i caratteri tipografici da Google Fonts (Google LLC). Questo servizio può comportare la trasmissione dell'indirizzo IP dell'utente a Google. Per maggiori informazioni consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy di Google</a>.</p>
+        <h2>3. Servizi di terze parti</h2>
+        <p>I caratteri tipografici sono ospitati sul sito stesso: aprendo le pagine non viene fatta alcuna richiesta a servizi esterni come Google Fonts. Se usi il modulo di contatto, i dati vengono inviati a FormSubmit (vedi la <a href="privacy-policy.html">Privacy Policy</a>). I link a WhatsApp e ai siti dei prodotti portano a servizi esterni con le loro informative.</p>
 
         <h2>4. Gestione delle preferenze</h2>
-        <p>Essendo presenti solo cookie tecnici, il consenso preventivo non è richiesto dalla normativa. Puoi comunque eliminare le preferenze salvate cancellando i dati di navigazione del tuo browser:</p>
+        <p>Trattandosi solo di strumenti tecnici, la normativa non richiede il consenso preventivo. Puoi comunque eliminare i dati salvati cancellando i dati di navigazione del browser:</p>
         <ul>
           <li><strong>Chrome/Edge</strong>: Impostazioni → Privacy e sicurezza → Cookie</li>
           <li><strong>Firefox</strong>: Impostazioni → Privacy e sicurezza → Cookie e dati dei siti web</li>
-          <li><strong>Safari</strong>: Preferenze → Privacy → Gestisci dati siti web</li>
+          <li><strong>Safari</strong>: Impostazioni → Privacy → Gestisci dati siti web</li>
         </ul>
 
         <h2>5. Titolare del trattamento</h2>
-        <p>Frame Lab | Verona, IT | <a href="mailto:info@framelabweb.it">info@framelabweb.it</a></p>
-      </div>
+        <p>Frame Lab · Verona, IT · <a href="mailto:info@framelabweb.it">info@framelabweb.it</a></p>
+      </article>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-copy">© 2026 Frame Lab. Tutti i diritti riservati.</p>
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./" class="brand" aria-label="Frame Lab, vai alla home">
+            <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+            <span class="brand-word" aria-hidden="true">FRAME LAB</span>
+          </a>
+          <p class="signature">Software &amp; Digital Solutions · Ideas into reality.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="ft-sito">
+          <h2 id="ft-sito">Sito</h2>
+          <ul>
+            <li><a href="./#servizi">Servizi</a></li>
+            <li><a href="./#prodotti">Prodotti e lavori</a></li>
+            <li><a href="./#processo">Metodo</a></li>
+            <li><a href="./#chi-siamo">Studio</a></li>
+            <li><a href="./#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="ft-prod">
+          <h2 id="ft-prod">Prodotti</h2>
+          <ul>
+            <li><a href="prodotti/nexogo.html">Nexogo</a></li>
+            <li><a href="prodotti/gestora.html">Gestora</a></li>
+            <li><a href="prodotti/cashflow.html">Cashflow</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h2>Contatti</h2>
+          <ul>
+            <li><a href="mailto:info@framelabweb.it">info@framelabweb.it</a></li>
+            <li><a href="tel:+393755206422">+39 375 520 6422</a></li>
+            <li><a href="https://wa.me/393755206422" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Frame Lab · Verona</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="cookie-policy.html">Cookie Policy</a></p>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>

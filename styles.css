@@ -886,3 +886,8 @@ html:not(.js) .carousel-track { scrollbar-width: thin; scrollbar-color: var(--li
   .on-dark { background: #fff; color: #000; }
   .on-dark h1, .on-dark h2, .on-dark h3 { color: #000; }
 }
+
+/* Anteprima prodotto non disponibile */
+.product-shot .work-media { aspect-ratio: 16 / 10; flex: none; }
+.product-shot .work-media::after { display: none; }
+.cta-band { border-top: 1px solid var(--line-dark); }

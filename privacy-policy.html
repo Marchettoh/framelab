@@ -3,69 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action https://formsubmit.co; base-uri 'self'; object-src 'none'" />
   <title>Privacy Policy | Frame Lab</title>
-  <meta name="description" content="Privacy Policy di Frame Lab: come trattiamo i dati personali ai sensi del GDPR." />
+  <meta name="description" content="Informativa sul trattamento dei dati personali del sito framelabweb.it." />
+  <link rel="canonical" href="https://www.framelabweb.it/privacy-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Frame Lab" />
+  <meta property="og:title" content="Privacy Policy | Frame Lab" />
+  <meta property="og:description" content="Informativa sul trattamento dei dati personali del sito framelabweb.it." />
+  <meta property="og:url" content="https://www.framelabweb.it/privacy-policy.html" />
+  <meta property="og:image" content="https://www.framelabweb.it/icons/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#0B1020" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comfortaa:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/space-grotesk-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
 </head>
-<body>
+<body class="page-plain">
+  <a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <header class="nav scrolled">
-    <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="Frame Lab home">
-        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <g transform="skewX(-10)">
-            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
-            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
-          </g>
-        </svg>
-        <span class="logo-text">FRAME LAB</span>
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="fl-mark" viewBox="0 0 64 64">
+      <g transform="skewX(-10)" fill="none" stroke-width="12" stroke-linejoin="round">
+        <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor"/>
+        <path class="mark-b" d="M46 41H18V56" stroke="#7C3AED"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="site-header on-dark" id="header">
+    <div class="container header-inner">
+      <a href="./" class="brand" aria-label="Frame Lab, vai alla home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+        <span class="brand-word" aria-hidden="true">FRAME LAB</span>
       </a>
-      <nav class="nav-links">
-        <a href="index.html">← Torna al sito</a>
+      <nav class="nav" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="./#servizi">Servizi</a></li>
+          <li><a href="./#prodotti">Prodotti</a></li>
+          <li><a href="./#processo">Metodo</a></li>
+          <li><a href="./#chi-siamo">Studio</a></li>
+        </ul>
       </nav>
+      <a href="./#contatti" class="btn btn-sm header-cta">Parliamone</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
     </div>
   </header>
 
-  <main class="policy">
+  <div class="mobile-menu on-dark" id="mobileMenu">
+    <nav aria-label="Principale (mobile)">
+      <ul class="mobile-menu-list">
+        <li><a href="./#servizi"><span>01</span>Servizi</a></li>
+        <li><a href="./#prodotti"><span>02</span>Prodotti</a></li>
+        <li><a href="./#processo"><span>03</span>Metodo</a></li>
+        <li><a href="./#chi-siamo"><span>04</span>Studio</a></li>
+        <li><a href="./#contatti"><span>05</span>Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:info@framelabweb.it">info@framelabweb.it</a>
+      <a href="tel:+393755206422">+39 375 520 6422</a>
+      <a href="./#contatti" class="btn">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1" class="policy">
     <div class="container">
-      <div class="policy-content">
+      <article class="policy-content">
         <h1>Privacy Policy</h1>
-        <p class="policy-updated">Ultimo aggiornamento: novembre 2026 | Informativa ai sensi dell'art. 13 del Regolamento (UE) 2016/679 (GDPR)</p>
+        <p class="policy-updated">Ultimo aggiornamento: novembre 2026 · Informativa ai sensi dell'art. 13 del Regolamento (UE) 2016/679 (GDPR)</p>
+        <p><span class="todo">Bozza da far verificare a un professionista prima della pubblicazione.</span></p>
 
         <h2>1. Titolare del trattamento</h2>
-        <p>Frame Lab | Verona, IT | <a href="mailto:info@framelabweb.it">info@framelabweb.it</a></p>
+        <p>Frame Lab · Verona, IT · <a href="mailto:info@framelabweb.it">info@framelabweb.it</a> · <span class="todo">[ragione sociale, indirizzo e P.IVA da completare]</span></p>
 
         <h2>2. Dati raccolti</h2>
-        <p>Questo sito è vetrina e non raccoglie dati personali attraverso form. I dati che ci invii volontariamente via email (nome, indirizzo email, contenuto del messaggio) vengono trattati esclusivamente per rispondere alla tua richiesta.</p>
+        <p>Il sito raccoglie dati personali solo quando li invii tu:</p>
+        <ul>
+          <li><strong>Modulo di contatto</strong>: nome, indirizzo email e testo del messaggio.</li>
+          <li><strong>Email, telefono o WhatsApp</strong>: i dati che scegli di comunicarci scrivendoci o chiamandoci.</li>
+        </ul>
+        <p>Il sito non usa strumenti di analisi statistica né di profilazione.</p>
 
         <h2>3. Finalità e base giuridica</h2>
         <ul>
-          <li><strong>Risposta alle richieste di contatto</strong> | esecuzione di misure precontrattuali su tua richiesta (art. 6.1.b GDPR)</li>
-          <li><strong>Funzionamento tecnico del sito</strong> | legittimo interesse (art. 6.1.f GDPR)</li>
+          <li><strong>Risposta alle richieste di contatto</strong>: esecuzione di misure precontrattuali su tua richiesta (art. 6.1.b GDPR).</li>
+          <li><strong>Funzionamento tecnico del sito</strong>: legittimo interesse (art. 6.1.f GDPR).</li>
         </ul>
 
-        <h2>4. Conservazione</h2>
-        <p>Le email di contatto sono conservate per il tempo necessario a gestire la richiesta e comunque non oltre 24 mesi, salvo instaurarsi un rapporto contrattuale.</p>
+        <h2>4. Modulo di contatto e fornitore FormSubmit</h2>
+        <p>Il modulo di contatto è gestito dal servizio FormSubmit (formsubmit.co), che riceve i dati inseriti e li inoltra al nostro indirizzo email. <span class="todo">[Verificare con il fornitore sede, eventuale trasferimento dei dati fuori dall'UE e relative garanzie (art. 44 e ss. GDPR); valutare la nomina a responsabile del trattamento.]</span></p>
 
-        <h2>5. Comunicazione a terzi</h2>
-        <p>I dati non sono venduti né comunicati a terzi, salvo fornitori tecnici (hosting, email) che operano secondo le istruzioni del titolare.</p>
+        <h2>5. Conservazione</h2>
+        <p>Le richieste di contatto sono conservate per il tempo necessario a gestirle e comunque non oltre 24 mesi, salvo l'instaurarsi di un rapporto contrattuale.</p>
 
-        <h2>6. I tuoi diritti</h2>
-        <p>Puoi esercitare in qualsiasi momento i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione (artt. 15-22 GDPR) scrivendo a <a href="mailto:info@framelabweb.it">info@framelabweb.it</a>. Hai inoltre diritto di reclamo al Garante per la protezione dei dati personali.</p>
-      </div>
+        <h2>6. Comunicazione a terzi</h2>
+        <p>I dati non sono venduti né comunicati a terzi, salvo i fornitori tecnici che ci servono per gestire il sito e la posta (hosting del sito su GitHub Pages, servizio email, FormSubmit per il modulo), che operano secondo le istruzioni del titolare.</p>
+
+        <h2>7. I tuoi diritti</h2>
+        <p>Puoi esercitare in qualsiasi momento i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione (artt. 15-22 GDPR) scrivendo a <a href="mailto:info@framelabweb.it">info@framelabweb.it</a>. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali.</p>
+      </article>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-copy">© 2026 Frame Lab. Tutti i diritti riservati.</p>
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./" class="brand" aria-label="Frame Lab, vai alla home">
+            <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+            <span class="brand-word" aria-hidden="true">FRAME LAB</span>
+          </a>
+          <p class="signature">Software &amp; Digital Solutions · Ideas into reality.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="ft-sito">
+          <h2 id="ft-sito">Sito</h2>
+          <ul>
+            <li><a href="./#servizi">Servizi</a></li>
+            <li><a href="./#prodotti">Prodotti e lavori</a></li>
+            <li><a href="./#processo">Metodo</a></li>
+            <li><a href="./#chi-siamo">Studio</a></li>
+            <li><a href="./#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="ft-prod">
+          <h2 id="ft-prod">Prodotti</h2>
+          <ul>
+            <li><a href="prodotti/nexogo.html">Nexogo</a></li>
+            <li><a href="prodotti/gestora.html">Gestora</a></li>
+            <li><a href="prodotti/cashflow.html">Cashflow</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h2>Contatti</h2>
+          <ul>
+            <li><a href="mailto:info@framelabweb.it">info@framelabweb.it</a></li>
+            <li><a href="tel:+393755206422">+39 375 520 6422</a></li>
+            <li><a href="https://wa.me/393755206422" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Frame Lab · Verona</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="cookie-policy.html">Cookie Policy</a></p>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>

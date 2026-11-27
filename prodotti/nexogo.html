@@ -3,102 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action https://formsubmit.co; base-uri 'self'; object-src 'none'" />
   <title>Nexogo | Frame Lab</title>
   <meta name="description" content="Nexogo è la piattaforma food delivery Frame Lab: app per i clienti, gestionale per il locale e app per i fattorini. Zero commissioni sugli ordini, abbonamento fisso." />
+  <link rel="canonical" href="https://www.framelabweb.it/prodotti/nexogo.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Frame Lab" />
+  <meta property="og:title" content="Nexogo | Frame Lab" />
+  <meta property="og:description" content="Nexogo è la piattaforma food delivery Frame Lab: app per i clienti, gestionale per il locale e app per i fattorini. Zero commissioni sugli ordini, abbonamento fisso." />
+  <meta property="og:url" content="https://www.framelabweb.it/prodotti/nexogo.html" />
+  <meta property="og:image" content="https://www.framelabweb.it/icons/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
   <link rel="manifest" href="../manifest.webmanifest" />
   <meta name="theme-color" content="#0B1020" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comfortaa:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="../assets/fonts/space-grotesk-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="../styles.css" />
+  <script src="../main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <header class="nav scrolled" id="nav">
-    <div class="container nav-inner">
-      <a href="../index.html" class="logo" aria-label="Frame Lab home">
-        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <g transform="skewX(-10)">
-            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
-            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
-          </g>
-        </svg>
-        <span class="logo-text">FRAME LAB</span>
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="fl-mark" viewBox="0 0 64 64">
+      <g transform="skewX(-10)" fill="none" stroke-width="12" stroke-linejoin="round">
+        <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor"/>
+        <path class="mark-b" d="M46 41H18V56" stroke="#7C3AED"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="site-header on-dark" id="header">
+    <div class="container header-inner">
+      <a href="../" class="brand" aria-label="Frame Lab, vai alla home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+        <span class="brand-word" aria-hidden="true">FRAME LAB</span>
       </a>
-      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale">
-        <a href="../index.html#servizi">Servizi</a>
-        <a href="../index.html#processo">Processo</a>
-        <a href="../index.html#prodotti">Prodotti</a>
-        <a href="../index.html#chi-siamo">Chi siamo</a>
-        <a href="../index.html#contatti" class="btn btn-primary btn-sm">Parliamone</a>
+      <nav class="nav" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="../#servizi">Servizi</a></li>
+          <li><a href="../#prodotti">Prodotti</a></li>
+          <li><a href="../#processo">Metodo</a></li>
+          <li><a href="../#chi-siamo">Studio</a></li>
+        </ul>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
-        <span></span><span></span>
+      <a href="../#contatti" class="btn btn-sm header-cta">Parliamone</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
       </button>
     </div>
   </header>
 
-  <main>
-    <section class="product-hero">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="glow glow-violet"></div>
-        <div class="glow glow-cyan"></div>
-      </div>
-      <div class="container product-hero-content">
-        <p class="eyebrow"><a href="../index.html#prodotti" class="crumb">← Prodotti Frame Lab</a></p>
-        <h1 class="product-title">Nexogo<span class="grad-text">.</span></h1>
-        <p class="product-hero-tag">Le consegne del tuo locale, finalmente tue.</p>
-        <p class="product-hero-desc">
-          Nexogo è la piattaforma completa per portare il tuo cibo direttamente ai clienti:
-          app per ordinare, gestionale per il locale e app per i fattorini.
-          Senza intermediari, senza percentuali, con il tuo marchio in primo piano.
-        </p>
-        <div class="hero-cta">
-          <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="btn btn-primary">Visita il sito ↗</a>
-          <a href="../index.html#contatti" class="btn btn-ghost">Richiedi una demo</a>
-        </div>
-      </div>
-    </section>
+  <div class="mobile-menu on-dark" id="mobileMenu">
+    <nav aria-label="Principale (mobile)">
+      <ul class="mobile-menu-list">
+        <li><a href="../#servizi"><span>01</span>Servizi</a></li>
+        <li><a href="../#prodotti"><span>02</span>Prodotti</a></li>
+        <li><a href="../#processo"><span>03</span>Metodo</a></li>
+        <li><a href="../#chi-siamo"><span>04</span>Studio</a></li>
+        <li><a href="../#contatti"><span>05</span>Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:info@framelabweb.it">info@framelabweb.it</a>
+      <a href="tel:+393755206422">+39 375 520 6422</a>
+      <a href="../#contatti" class="btn">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
 
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow reveal">Tre app, un ecosistema</p>
-        <h2 class="section-title reveal">Tutto quello che serve<br />per vendere e consegnare.</h2>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-            <h3>App per i clienti</h3>
-            <p>Menu con foto, consegna a domicilio o asporto, tracking del fattorino in tempo reale e riordino in un tocco. Ordinare diventa facile come nei grandi marketplace, ma il rapporto è solo tuo.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
-            <h3>Gestionale per il locale</h3>
-            <p>Ordini in tempo reale, menu e prezzi in autonomia, assegnazione consegne, mappa live dei fattorini e controlli veicoli aziendali con foto inizio e fine turno.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M15 6h3l3 7h-5M5.5 18.5h8L15 8"/><circle cx="15" cy="5" r="2"/></svg></div>
-            <h3>App per i fattorini</h3>
-            <p>Incarichi chiari, 4 passaggi guidati, GPS in background con ETA per il cliente e funzionamento offline con sincronizzazione automatica.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <p class="eyebrow reveal">Perché Nexogo</p>
-        <h2 class="section-title reveal">I marketplace costano il 25/30%<br />a ordine. Noi no.</h2>
-        <div class="split">
+  <main id="main" tabindex="-1">
+    <section class="hero product-hero on-dark" aria-labelledby="product-title">
+      <div class="hero-bg" aria-hidden="true"><div class="hero-grid"></div></div>
+      <div class="container hero-inner">
+        <a href="../#prodotti" class="crumb"><span aria-hidden="true">←</span> Prodotti Frame Lab</a>
+        <div class="product-hero-grid">
           <div>
-            <div class="stats stats-inline reveal">
-              <div class="stat"><span class="stat-num">0%</span><span class="stat-label">commissioni | incassi tutto tu</span></div>
-              <div class="stat"><span class="stat-num">3</span><span class="stat-label">app incluse: clienti, locale, fattorini</span></div>
-              <div class="stat"><span class="stat-num">∞</span><span class="stat-label">ordini, prodotti e fattorini senza limiti</span></div>
-              <div class="stat"><span class="stat-num">100</span><span class="stat-label">€/mese | canone fisso, tutto incluso</span></div>
+            <p class="kicker">Prodotto · Food delivery</p>
+            <h1 class="product-title" id="product-title">Nexogo</h1>
+            <p class="product-claim">Le consegne del tuo locale, finalmente tue.</p>
+            <p class="hero-lead">Nexogo è la piattaforma completa per portare il tuo cibo direttamente ai clienti: app per ordinare, gestionale per il locale e app per i fattorini. Senza intermediari, senza percentuali, con il tuo marchio in primo piano.</p>
+            <div class="hero-actions">
+              <a href="../#contatti" class="btn">Richiedi una demo <span class="arrow" aria-hidden="true">→</span></a>
+              <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="btn btn-secondary">Visita il sito <span class="arrow" aria-hidden="true">↗</span><span class="sr-only"> (si apre in una nuova scheda)</span></a>
             </div>
           </div>
-          <ul class="check-list reveal">
+          <figure class="product-shot">
+            <img src="../assets/img/nexogo-960.jpg" srcset="../assets/img/nexogo-480.jpg 480w, ../assets/img/nexogo-960.jpg 960w" sizes="(max-width: 900px) 100vw, 520px" width="960" height="600" alt="Pagina iniziale del sito di Nexogo" />
+            <figcaption>nexogo.framelabweb.it</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="index" data-reveal><span class="index-num">01</span> Tre app, un ecosistema</p>
+          <h2 class="section-title" id="feat-title" data-reveal>Tutto quello che serve per vendere e consegnare.</h2>
+        </div>
+        <ul class="feature-grid" role="list">
+          <li class="feature" data-reveal>
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
+            <h3>App per i clienti</h3>
+            <p>Menu con foto, consegna a domicilio o asporto, tracking del fattorino in tempo reale e riordino in un tocco. Ordinare diventa facile come nei grandi marketplace, ma il rapporto è solo tuo.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+            <h3>Gestionale per il locale</h3>
+            <p>Ordini in tempo reale, menu e prezzi in autonomia, assegnazione consegne, mappa live dei fattorini e controlli veicoli aziendali con foto inizio e fine turno.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M15 6h3l3 7h-5M5.5 18.5h8L15 8"/><circle cx="15" cy="5" r="2"/></svg></span>
+            <h3>App per i fattorini</h3>
+            <p>Incarichi chiari, 4 passaggi guidati, GPS in background con ETA per il cliente e funzionamento offline con sincronizzazione automatica.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="index" data-reveal><span class="index-num">02</span> Perché Nexogo</p>
+          <h2 class="section-title" id="why-title" data-reveal>I marketplace costano il 25/30% a ordine. Noi no.</h2>
+        </div>
+        <div class="split">
+          <div class="stat-row" data-reveal>
+            <div><strong>0%</strong><span>commissioni: incassi tutto tu</span></div>
+            <div><strong>3</strong><span>app incluse: clienti, locale, fattorini</span></div>
+            <div><strong>Senza limiti</strong><span>ordini, prodotti e fattorini</span></div>
+            <div><strong>100 €/mese</strong><span>canone fisso, tutto incluso</span></div>
+          </div>
+          <ul class="check-list" role="list" data-reveal>
             <li>Multi locale con menu e orari dedicati</li>
             <li>Integrazione con il gestionale di cassa</li>
             <li>Fasce di consegna calcolate su orari reali</li>
@@ -109,37 +152,62 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="cta-box reveal">
-          <div class="cta-glow" aria-hidden="true"></div>
-          <h2>Porta le consegne<br /><span class="grad-text">a casa tua.</span></h2>
+    <section class="cta-band on-dark" aria-labelledby="cta-title">
+      <div class="container cta-band-inner">
+        <div>
+          <h2 id="cta-title">Porta le consegne a casa tua.</h2>
           <p>Demo guidata, configurazione assistita e app pronte in pochi giorni.</p>
-          <div class="cta-actions">
-            <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="btn btn-primary">nexogo.framelabweb.it ↗</a>
-            <a href="../index.html#contatti" class="btn btn-ghost">Contattaci</a>
-          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="../#contatti" class="btn">Contattaci <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="btn btn-secondary">nexogo.framelabweb.it <span class="arrow" aria-hidden="true">↗</span><span class="sr-only"> (si apre in una nuova scheda)</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <a href="../index.html" class="logo" aria-label="Frame Lab home">
-        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <g transform="skewX(-10)">
-            <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/>
-            <path d="M46 41H18V56" stroke="#7C3AED" stroke-width="12" stroke-linejoin="round"/>
-          </g>
-        </svg>
-        <span class="logo-text">FRAME LAB</span>
-      </a>
-      <p class="footer-tag">Software &amp; Digital Solutions | Ideas into reality.</p>
-      <p class="footer-copy">© <span id="year"></span> Frame Lab. Tutti i diritti riservati.</p>
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../" class="brand" aria-label="Frame Lab, vai alla home">
+            <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+            <span class="brand-word" aria-hidden="true">FRAME LAB</span>
+          </a>
+          <p class="signature">Software &amp; Digital Solutions · Ideas into reality.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="ft-sito">
+          <h2 id="ft-sito">Sito</h2>
+          <ul>
+            <li><a href="../#servizi">Servizi</a></li>
+            <li><a href="../#prodotti">Prodotti e lavori</a></li>
+            <li><a href="../#processo">Metodo</a></li>
+            <li><a href="../#chi-siamo">Studio</a></li>
+            <li><a href="../#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="ft-prod">
+          <h2 id="ft-prod">Prodotti</h2>
+          <ul>
+            <li><a href="nexogo.html">Nexogo</a></li>
+            <li><a href="gestora.html">Gestora</a></li>
+            <li><a href="cashflow.html">Cashflow</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h2>Contatti</h2>
+          <ul>
+            <li><a href="mailto:info@framelabweb.it">info@framelabweb.it</a></li>
+            <li><a href="tel:+393755206422">+39 375 520 6422</a></li>
+            <li><a href="https://wa.me/393755206422" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Frame Lab · Verona</p>
+        <p><a href="../privacy-policy.html">Privacy Policy</a> · <a href="../cookie-policy.html">Cookie Policy</a></p>
+      </div>
     </div>
   </footer>
-
-  <script src="../main.js"></script>
 </body>
 </html>
