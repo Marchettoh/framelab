@@ -533,6 +533,18 @@ html:not(.js) .carousel-track { scrollbar-width: thin; scrollbar-color: var(--li
   height: 4.5rem;
   background: linear-gradient(to bottom, rgba(20, 27, 51, 0), var(--navy-2));
 }
+.work-media--logo {
+  display: grid;
+  place-items: center;
+  padding: 2.5rem 2rem;
+}
+.work-media--logo img {
+  position: static;
+  width: 62%;
+  height: auto;
+  max-height: 55%;
+  object-fit: contain;
+}
 .work-media--placeholder {
   display: grid;
   place-items: center;
