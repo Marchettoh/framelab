@@ -247,3 +247,10 @@ Legenda impatto/difficoltà: **A** alto · **M** medio · **B** basso.
 3. **Eliminare ciò che non è vero o verificabile**: statistiche decorative, frasi sul team, incoerenza della privacy policy.
 4. **Dire subito cosa fa Frame Lab**: hero in italiano, specifica.
 5. **Mostrare il lavoro**: i prodotti sono la prova più forte, ma oggi sono solo testo.
+
+---
+
+## Addendum (emerso durante l'implementazione)
+
+- **Critico — dominio Cashflow inesistente.** `cashflow.framelabweb.it`, linkato dalla home e dalla pagina prodotto come "Apri l'app", non risolve (risposta DNS NXDOMAIN, verificata il 27/11/2026). Chi cliccava finiva su un errore del browser. Nel redesign i link esterni a Cashflow sono stati rimossi e sostituiti con "Chiedi informazioni" verso il modulo contatti. Da ripristinare quando il dominio sarà attivo.
+- **Privacy policy non allineata.** La versione pubblicata dichiarava che il sito "non raccoglie dati attraverso form", mentre il modulo contatti invia nome, email e messaggio a FormSubmit. La bozza nel redesign corregge il punto ma va validata da un professionista.
