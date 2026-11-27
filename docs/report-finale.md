@@ -116,7 +116,7 @@ Non riporto punteggi che non ho misurato.
 - **Cashflow:** manca il dominio dell'app e manca uno screenshot.
 - **Privacy e cookie policy** sono bozze. Vanno completate con ragione sociale e P.IVA e fatte validare da un professionista, soprattutto sul trasferimento dati di FormSubmit fuori dall'UE. Non posso garantire la conformità legale.
 - Header e footer sono duplicati a mano in ogni pagina: chi modifica una voce deve aggiornarla ovunque.
-- La sezione `docs/` (≈ 13 MB con gli screenshot) verrebbe pubblicata da GitHub Pages con il merge. Vedi sotto.
+- La sezione `docs/` (≈ 11 MB con gli screenshot) verrebbe pubblicata da GitHub Pages con il merge. Vedi sotto.
 - I testi della home sono ripresi in gran parte dal sito attuale. Alcune affermazioni restano da confermare: metodo, assistenza post-lancio, "25/30 %" dei marketplace.
 
 ## 8. Dati da confermare
