@@ -53,7 +53,7 @@
     <symbol id="fl-mark" viewBox="0 0 64 64">
       <g transform="skewX(-10)" fill="none" stroke-width="12" stroke-linejoin="round">
         <path d="M58 14H32Q18 14 18 26V33" stroke="currentColor"/>
-        <path d="M46 41H18V56" stroke="#7C3AED"/>
+        <path class="mark-b" d="M46 41H18V56" stroke="#7C3AED"/>
       </g>
     </symbol>
   </svg>
@@ -106,7 +106,7 @@
         <svg class="hero-mark" viewBox="0 0 64 64">
           <g transform="skewX(-10)" stroke-width="5">
             <path d="M58 14H32Q18 14 18 26V33" stroke="rgba(255,255,255,.55)"/>
-            <path d="M46 41H18V56" stroke="#7C3AED"/>
+            <path class="mark-b" d="M46 41H18V56" stroke="#7C3AED"/>
           </g>
         </svg>
       </div>
@@ -180,7 +180,7 @@
 
     <!-- 02 PRODOTTI E LAVORI -->
     <section class="section on-dark" id="prodotti" aria-labelledby="prodotti-title">
-      <div class="container">
+      <div class="container work-head">
         <div class="section-head">
           <p class="index" data-reveal><span class="index-num">02</span> Prodotti e lavori</p>
           <h2 class="section-title" id="prodotti-title" data-reveal>Software pronti, in noleggio.</h2>
@@ -190,92 +190,100 @@
             e supportate da chi le ha scritte.
           </p>
         </div>
+        <div class="carousel-controls" data-carousel-controls="work">
+          <button type="button" class="carousel-btn" data-dir="-1" aria-controls="workTrack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            <span class="sr-only">Progetto precedente</span>
+          </button>
+          <p class="carousel-count" aria-hidden="true"><b data-carousel-current>01</b> / <span data-carousel-total>05</span></p>
+          <button type="button" class="carousel-btn" data-dir="1" aria-controls="workTrack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            <span class="sr-only">Progetto successivo</span>
+          </button>
+        </div>
+      </div>
 
-        <div class="work-grid">
-          <article class="work-card framed" data-reveal>
+      <div class="carousel" data-reveal>
+        <ul class="carousel-track" id="workTrack" role="list" tabindex="0" aria-label="Prodotti e lavori, scorri in orizzontale">
+          <li class="work-card framed">
             <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
             <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
             <div class="work-media">
-              <img src="assets/img/nexogo-480.jpg" srcset="assets/img/nexogo-480.jpg 480w, assets/img/nexogo-960.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px" width="960" height="600" loading="lazy" decoding="async" alt="Pagina iniziale del sito di Nexogo" />
+              <img src="assets/img/nexogo-mobile.jpg" width="540" height="1080" loading="lazy" decoding="async" alt="Il sito di Nexogo visto da smartphone" />
             </div>
             <div class="work-body">
               <p class="work-type">Prodotto · Food delivery</p>
               <h3>Nexogo</h3>
-              <p class="work-tag">Food delivery senza commissioni per il tuo locale</p>
-              <p class="work-desc">Tre app in un ecosistema: i clienti ordinano, il locale gestisce, i fattorini consegnano. Zero percentuali sugli ordini, il tuo marchio in primo piano.</p>
-              <ul class="work-feats">
-                <li>App clienti, gestionale e app fattorini incluse</li>
-                <li>0% commissioni, abbonamento fisso mensile</li>
-                <li>Tracking live della consegna sulla mappa</li>
-              </ul>
+              <p class="work-tag">Food delivery senza commissioni per il tuo locale: app clienti, gestionale e app fattorini.</p>
               <div class="work-actions">
                 <a href="prodotti/nexogo.html" class="btn btn-sm stretched">Scopri Nexogo <span class="arrow" aria-hidden="true">→</span></a>
-                <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="text-link work-ext">nexogo.framelabweb.it<span class="sr-only"> (si apre in una nuova scheda)</span></a>
+                <a href="https://nexogo.framelabweb.it" target="_blank" rel="noopener" class="text-link work-ext">Sito<span class="sr-only"> di Nexogo (si apre in una nuova scheda)</span> ↗</a>
               </div>
             </div>
-          </article>
+          </li>
 
-          <article class="work-card framed" data-reveal>
+          <li class="work-card framed">
             <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
             <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
             <div class="work-media">
-              <img src="assets/img/gestora-480.jpg" srcset="assets/img/gestora-480.jpg 480w, assets/img/gestora-960.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px" width="960" height="600" loading="lazy" decoding="async" alt="Pagina iniziale del sito di Gestora" />
+              <img src="assets/img/gestora-mobile.jpg" width="540" height="1080" loading="lazy" decoding="async" alt="Il sito di Gestora visto da smartphone" />
             </div>
             <div class="work-body">
               <p class="work-type">Prodotto · Gestionale</p>
               <h3>Gestora</h3>
-              <p class="work-tag">Meno caos. Più controllo.</p>
-              <p class="work-desc">Ordini, magazzino e produzione in sintonia: Gestora è il gestionale che dà il ritmo alla tua attività, dal preventivo alla consegna.</p>
-              <ul class="work-feats">
-                <li>Ordini, magazzino e produzione sincronizzati</li>
-                <li>Vista unica sullo stato di ogni lavorazione</li>
-                <li>Canone mensile, aggiornamenti inclusi</li>
-              </ul>
+              <p class="work-tag">Meno caos. Più controllo. Ordini, magazzino e produzione in sintonia.</p>
               <div class="work-actions">
                 <a href="prodotti/gestora.html" class="btn btn-sm stretched">Scopri Gestora <span class="arrow" aria-hidden="true">→</span></a>
-                <a href="https://gestora.framelabweb.it" target="_blank" rel="noopener" class="text-link work-ext">gestora.framelabweb.it<span class="sr-only"> (si apre in una nuova scheda)</span></a>
+                <a href="https://gestora.framelabweb.it" target="_blank" rel="noopener" class="text-link work-ext">Sito<span class="sr-only"> di Gestora (si apre in una nuova scheda)</span> ↗</a>
               </div>
             </div>
-          </article>
+          </li>
 
-          <article class="work-card framed" data-reveal>
+          <li class="work-card framed">
             <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
             <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
             <div class="work-media work-media--placeholder">
-              <p><strong>Cashflow</strong>Anteprima non ancora disponibile</p>
+              <svg aria-hidden="true"><use href="#fl-mark"/></svg>
+              <p>Anteprima non ancora disponibile</p>
             </div>
             <div class="work-body">
               <p class="work-type">Prodotto · Web app</p>
               <h3>Cashflow</h3>
-              <p class="work-tag">Il controllo dei tuoi soldi, ogni giorno</p>
-              <p class="work-desc">Entrate, uscite e budget sempre sottomano: Cashflow è l'app che ti dice esattamente come stai andando, giorno dopo giorno.</p>
-              <ul class="work-feats">
-                <li>Movimenti e saldi sempre aggiornati</li>
-                <li>Panoramica chiara di entrate e uscite</li>
-                <li>Installabile come app su ogni dispositivo</li>
-              </ul>
+              <p class="work-tag">Il controllo dei tuoi soldi, ogni giorno: entrate, uscite e saldi sempre sottomano.</p>
               <div class="work-actions">
                 <a href="prodotti/cashflow.html" class="btn btn-sm stretched">Scopri Cashflow <span class="arrow" aria-hidden="true">→</span></a>
               </div>
             </div>
-          </article>
-        </div>
+          </li>
 
-        <article class="work-client framed" id="lavori" data-reveal>
-          <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
-          <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
-          <div class="work-media">
-            <img src="assets/img/turbomastin-480.jpg" srcset="assets/img/turbomastin-480.jpg 480w, assets/img/turbomastin-960.jpg 960w" sizes="(max-width: 900px) 100vw, 680px" width="960" height="600" loading="lazy" decoding="async" alt="Pagina iniziale del sito TurboMastin" />
-          </div>
-          <div class="work-body">
-            <p class="work-type">Lavoro per un cliente · Sito web</p>
-            <h3>TurboMastin</h3>
-            <p class="work-desc">Il sito statico dell'officina TurboMastin di San Pietro in Cariano.</p>
-            <div class="work-actions">
-              <a href="https://turbomastin.framelabweb.it" target="_blank" rel="noopener" class="btn btn-sm btn-secondary stretched">Visita il sito <span class="arrow" aria-hidden="true">↗</span><span class="sr-only"> (si apre in una nuova scheda)</span></a>
+          <li class="work-card framed" id="lavori">
+            <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
+            <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
+            <div class="work-media">
+              <img src="assets/img/turbomastin-mobile.jpg" width="540" height="1080" loading="lazy" decoding="async" alt="Il sito di TurboMastin visto da smartphone" />
             </div>
-          </div>
-        </article>
+            <div class="work-body">
+              <p class="work-type">Lavoro per un cliente · Sito web</p>
+              <h3>TurboMastin</h3>
+              <p class="work-tag">Il sito statico dell'officina di San Pietro in Cariano.</p>
+              <div class="work-actions">
+                <a href="https://turbomastin.framelabweb.it" target="_blank" rel="noopener" class="btn btn-sm stretched">Visita il sito <span class="arrow" aria-hidden="true">↗</span><span class="sr-only"> (si apre in una nuova scheda)</span></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-card work-card--cta framed">
+            <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
+            <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
+            <svg class="brand-mark" aria-hidden="true"><use href="#fl-mark"/></svg>
+            <div>
+              <h3>Il prossimo progetto può essere il tuo.</h3>
+              <p>Raccontaci di cosa hai bisogno: partiamo dal problema, non dalla tecnologia.</p>
+              <a href="#contatti" class="btn btn-sm stretched">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </li>
+        </ul>
+        <div class="carousel-progress" aria-hidden="true"><span></span></div>
       </div>
     </section>
 

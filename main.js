@@ -18,6 +18,7 @@
     initMenu();
     initReveal();
     initActiveNav();
+    initCarousel();
     initForm();
     initNotice();
     var y = document.querySelectorAll('[data-year]');
@@ -125,6 +126,52 @@
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     Object.keys(map).forEach(function (id) { io.observe(document.getElementById(id)); });
+  }
+
+  // Carosello: lo scorrimento è nativo (scroll-snap); qui solo frecce, contatore e barra di avanzamento
+  function initCarousel() {
+    var track = document.getElementById('workTrack');
+    if (!track) return;
+    var controls = document.querySelector('[data-carousel-controls="work"]');
+    var cards = track.children;
+    var prev = controls && controls.querySelector('[data-dir="-1"]');
+    var next = controls && controls.querySelector('[data-dir="1"]');
+    var cur = controls && controls.querySelector('[data-carousel-current]');
+    var tot = controls && controls.querySelector('[data-carousel-total]');
+    var bar = track.parentElement.querySelector('.carousel-progress span');
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    if (tot) tot.textContent = pad(cards.length);
+
+    function step() {
+      if (cards.length < 2) return track.clientWidth;
+      return cards[1].offsetLeft - cards[0].offsetLeft;
+    }
+    function update() {
+      var max = track.scrollWidth - track.clientWidth;
+      var x = track.scrollLeft;
+      if (prev) prev.disabled = x <= 2;
+      if (next) next.disabled = x >= max - 2;
+      var idx = Math.min(cards.length - 1, Math.round(x / step()));
+      if (x >= max - 2) idx = cards.length - 1;
+      if (cur) cur.textContent = pad(idx + 1);
+      if (bar) {
+        var visible = track.clientWidth / track.scrollWidth;
+        var p = max > 0 ? visible + (1 - visible) * (x / max) : 1;
+        bar.style.setProperty('--p', p.toFixed(3));
+      }
+    }
+    function go(dir) {
+      track.scrollBy({ left: dir * step(), behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
+    if (prev) prev.addEventListener('click', function () { go(-1); });
+    if (next) next.addEventListener('click', function () { go(1); });
+    var raf = 0;
+    track.addEventListener('scroll', function () {
+      if (raf) return;
+      raf = requestAnimationFrame(function () { raf = 0; update(); });
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
   }
 
   // Form contatti: validazione con messaggi chiari, stato di invio, conferma dopo il ritorno da FormSubmit
